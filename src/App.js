@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import Display from './components/display/Display';
+import Keyboard from './components/keyboard/Keyboard';
 
 function App() {
+
+  const [initialState, setInitialState] = useState({
+    displayValue: 2200,
+    clearDisplay: false, 
+    operation: null, 
+    values: [0, 0],
+    current: 0
+    })
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>Caluladora</h2>
+      <div className="Calc">
+        <Display displayValue={initialState.displayValue}/>
+        <Keyboard/>
+      </div>
     </div>
   );
 }

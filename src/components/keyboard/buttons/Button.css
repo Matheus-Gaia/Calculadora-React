@@ -1,0 +1,14 @@
+.Button {
+    background-color: #91a4a4;
+    width: 90%;
+    height: 90%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Button:hover {
+    cursor: pointer;
+    background-color: #91a4a46e;
+}

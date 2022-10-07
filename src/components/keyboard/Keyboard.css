@@ -1,0 +1,9 @@
+.Keyboard {
+    margin-top: 10px;
+    height: 78%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+}
