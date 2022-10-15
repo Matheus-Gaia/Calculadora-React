@@ -6,9 +6,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 17px;
+    font-weight: bolder;
 }
 
 .Button:hover {
     cursor: pointer;
     background-color: #91a4a46e;
+}
+
+.Button:active {
+    box-shadow: 1px 1px 1px 1px
 }
